@@ -239,6 +239,9 @@ int main()
             s.move(28, 31); // offset
             window.draw(s);
         }
+
+        window.draw(frame);
+        window.display();
     }
 
     return 0;
