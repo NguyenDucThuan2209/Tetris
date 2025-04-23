@@ -156,12 +156,11 @@ int main()
             // If the tetromino is not in a valid position, revert to the previous position
             if (!checkValidPosition())
             {
-                int row = b[i].y;
-                int column = b[i].x;
-
                 // Save the tetromino's position in the field
                 for (int i = 0; i < 4; i++)
                 {
+                    int row = b[i].y;
+                    int column = b[i].x;
                     field[row][column] = colorNum;
                 }
 
